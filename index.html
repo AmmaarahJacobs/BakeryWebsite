@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bakery Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ball">
+
+    </div>
+    <section>
+        <header>
+            <a href="#"><img src="images.bakery/fb3cb6da-6491-4ead-851f-b20790f67647.png" alt="bakery" width="60" height="60"></a>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="content">
+                <h1>Shop <span>Cupcakes</span></h1>
+                <h2>Order Now For Any Occassion!!</h2>
+                <p>Freshly Baked Homemade Cupcakes For You!!!!</p>
+                <a href="orderpage.html">Order Now</a>
+            </div>
+            <div class="products">
+                <img src="images.bakery/lilac ghost.png" alt="Cupcakes" class="cupcake" width="350" height="350">
+            </div>
+    
+            <ul class="click">
+              <li><img src="images.bakery/lilac ghost.png" onclick="imgSlider('images.bakery/lilac ghost.png');changeColor('#E7B6AB')"></li>  
+              <li><img src="images.bakery/Vanilla Cupcake at Rs 50 _piece _ Cupcakes _ ID_ 13768712648 png for Free Download _ DLPNG.png" onclick="imgSlider('images.bakery/Vanilla Cupcake at Rs 50 _piece _ Cupcakes _ ID_ 13768712648 png for Free Download _ DLPNG.png');changeColor('bisque')"></li>  
+              <li><img src="images.bakery/Angel Cakes.png" onclick="imgSlider('images.bakery/Angel Cakes.png');changeColor('pink')"></li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.cupcake').src = anything;
+            }
+
+            function changeColor(color) {
+                const ball = document.querySelector('.ball');
+                ball.style.background = color;
+
+            }
+        </script>
+    </section>
+
+</body>
+</html>
